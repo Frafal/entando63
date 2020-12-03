@@ -73,6 +73,7 @@ helm dependency update .
 helm template --namespace=my-app ./ > my-app.yaml
 sleep 2
 sed -i "s/RELEASE-NAME-operator/entando-app/" my-app.yaml
+sed -i "s/1000/10000/" my-app.yaml
 oc create -f my-app.yaml
 
 echo "----------------------------------------------------------------"
