@@ -7,6 +7,9 @@ sudo apt update && sudo apt upgrade
 git clone https://github.com/Frafal/entando63.git
 cd entando63
 sed -i "s/UTENTE/$USER/" INSTALL-okd.sh
+```
+!!! PAY ATTENTION TO THE 42nd and 62nd line, replace with your actual network device!!!!
+```
 sudo chmod +x INSTALL-okd.sh
 sudo ./INSTALL-okd.sh
 ```
