@@ -85,5 +85,5 @@ echo
 # set iptables rule
 iptables -I INPUT -i docker0 -j ACCEPT
 
-sleep5
+sleep 5
 oc get pods -n my-app --watch
