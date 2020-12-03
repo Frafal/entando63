@@ -55,15 +55,15 @@ oc adm policy add-cluster-role-to-user cluster-admin developer
 
 # Create a default projet calles my-app
 sleep 5
-#oc new-project my-app
 oc new-project my-app
 
 # Clone the entando custom resourses and install them
 git clone https://github.com/entando-k8s/entando-k8s-custom-model.git --branch v6.2.7
 oc create -f entando-k8s-custom-model/src/main/resources/crd/
 
-#curl -L -C - https://raw.githubusercontent.com/entando/entando-releases/v6.2.0/dist/qs/custom-resources.tar.gz | tar -xz
+sleep 5
 
+# Clone the entando helm quick start and install in my-app
 git clone https://github.com/entando-k8s/entando-helm-quickstart.git --branch v6.3.0
 cd entando-helm-quickstart
 sed -i "s/your.domain.suffix.com/$myIP.nip.io/" values.yaml
@@ -81,6 +81,7 @@ echo
 echo "Now you can access to https://${myIP}:8443/console/ with the \"developer\" user"
 echo
 # set iptables rule
-sudo iptables -I INPUT -i docker0 -j ACCEPT
+iptables -I INPUT -i docker0 -j ACCEPT
 
+sleep5
 oc get pods -n my-app --watch
