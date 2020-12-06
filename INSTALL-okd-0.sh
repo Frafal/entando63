@@ -1,5 +1,4 @@
 #!/bin/bash
-# !!! PAY ATTENTION TO THE 42nd and 62nd line, replace with your actual network device!!!!
 apt-get update
 apt-get install -y net-tools apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
