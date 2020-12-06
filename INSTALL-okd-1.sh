@@ -1,4 +1,6 @@
 #!/bin/bash
+# !!! PAY ATTENTION TO THE 9nd, replace eth0 with your actual network device!!!!
+
 # Start Openshift cluster
 #Retreive actual IP address
 
