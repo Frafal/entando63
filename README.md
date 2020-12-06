@@ -21,7 +21,7 @@ sudo shutdown -h now
 multipass shell ubuntu-entando
 cd entando63
 ```
-# !!! PAY ATTENTION TO THE 9nd of INSTALL-okd-1.sh, replace eth0 with your actual network device!!!!
+### !!! PAY ATTENTION TO THE 9nd of INSTALL-okd-1.sh, replace eth0 with your actual network device!!!!
 ```
 sed -i "s/UTENTE/${USER}/" INSTALL-okd-1.sh
 sudo chmod +x INSTALL-okd-1.sh
