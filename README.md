@@ -56,7 +56,7 @@ route ADD 192.168.238.116 192.168.162.30
 Start:
 ```
 sudo oc cluster up --public-hostname=${myIP} --enable=* --base-dir=/home/UTENTE/openshift-conf
-(i.e. sudo oc cluster up --public-hostname=192.168.238.116 --enable=* --base-dir=/home/UTENTE/openshift-conf)
+(i.e. sudo oc cluster up --public-hostname=192.168.238.116 --enable=* --base-dir=/home/ubuntu/openshift-conf)
 ```
 Stop:
 ```
