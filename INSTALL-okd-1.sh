@@ -37,7 +37,6 @@ oc create -f my-app.yaml
 
 echo "----------------------------------------------------------------"
 
-myIP=$(ifconfig eth0 | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
 echo "Custom resource definition installed."
 echo
 echo "Now you can access to https://${myIP}:8443/console/ with the \"developer\" user"
