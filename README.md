@@ -12,6 +12,7 @@ git clone https://github.com/Frafal/entando63.git
 cd entando63
 sudo chmod +x INSTALL-okd-0.sh
 sudo ./INSTALL-okd-0.sh
+sudo chmod+x static-ip.sh
 sudo ./static-ip.sh
 sudo shutdown -h now
 ```
