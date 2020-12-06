@@ -1,0 +1,6 @@
+network:
+        ethernets:
+                eth0:
+                        addresses:
+                        - myIP/24
+        version: 2
